@@ -61,11 +61,11 @@ upgController.addEventListener('click', () => {
     upgOpen = !upgOpen;
 });
 
-document.body.addEventListener('keydown', function (event) {
-    if (event.code === 'ShiftLeft') {
-        new Bleba().Create();
-    }
-});
+// document.body.addEventListener('keydown', function (event) {
+//     if (event.code === 'ShiftLeft') {
+//         new Bleba().Create();
+//     }
+// });
 
 document.getElementById('UPD_Health').addEventListener('click', () => {
     if(Magic>-10){
@@ -327,6 +327,12 @@ function LootInitializing() {
 
 function Redraw() {
     //if(HP<1) Death();
+
+    if(document.getElementsByClassName('entityContainer').length<1){
+        for(let i = 0; i<Math.random()*10+1;i++){
+            new Bleba().Create();
+        }
+    }
 
     let hpw = HP/MaxHp*100+'%';
     HPBar.style.width=hpw;

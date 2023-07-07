@@ -37,6 +37,12 @@ if (this.childNodes[0].getAttribute('value') < 1) {
     localStorage.setItem('Money', x);
     document.getElementById('info').innerText='Деньги: '+ localStorage.getItem('Money');
     this.remove();
+
+    if(document.getElementsByClassName('entityContainer').length<1){
+        for(let i = 0; i<Math.random()*10+1;i++){
+            new Bleba().Create();
+        }
+    }
 }
 }
     
