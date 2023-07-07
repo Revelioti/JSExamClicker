@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="Scripts/mainFile.js"></script>
+    <script type="module" src="Scripts/enemyLIst.js"></script>
+    <script type="module" src="Scripts/lootList.js"></script>
+    <script type="module" src="Scripts/weaponList.js"></script>
+</head>
+
+<body>
+    <div id="background"></div>
+
+    <div id="inventory">
+        <div id="inventoryCont"></div>
+        <div id="inventoryFlex">
+            <div class="Helmet"></div>
+            <div class="Armour"></div>
+            <div class="Shield"></div>
+            <div class="Weapon"></div>            
+        </div>
+    </div>
+
+    <div id="equipment">
+        <div id="equipmentCont"></div>
+        <div id="equipmentFlex"></div>
+    </div>
+
+    <div id="upgrade">
+        <div id="upgradeCont">
+        </div>
+        <div id="upgradeFlex">
+            <div class="upgradeTemplate" id="UPD_Health">Upgrade max health</div>
+            <div class="upgradeTemplate" id="UPD_Magic">Upgrade magic recovery</div>
+            <div class="upgradeTemplate" id="UPD_Stamina">Upgrade stamina recovery</div>
+            <div class="upgradeTemplate" id="UPD_Damage">Upgrade damage</div>
+            <div class="upgradeTemplate" id="UPD_Weight">Upgrade max weight</div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="barContainer">
+            <div id="health" class="bar"></div>
+            <div id="magic" class="bar"></div>
+            <div id="stamina" class="bar"></div>
+        </div>
+        <div id="footerContainer">
+            <div id="light"></div>
+            <div id="info"></div>
+            <div id="magicContainer">
+                <div class="magicTemplate">HP recovery</div>
+                <div class="magicTemplate">Stamina recovery</div>
+                <div class="magicTemplate">Mass damage</div>
+                <div class="magicTemplate">Damage boost</div>
+                <div class="magicTemplate">Attack speed boost</div>
+                <div class="magicTemplate">Spawn chestBox</div>
+                <div class="magicTemplate">Fill lamp</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
